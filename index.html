@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joseph Gitari | Web Architect</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>Code</text></svg>">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <!-- PARTICLES BG -->
+  <div id="particles"></div>
+
+
+
+<!-- HEADER -->
+<header class="header" data-header>
+  <div class="container nav">
+    <a href="#" class="logo">
+      <span class="logo-text">Joseph</span>
+      <span class="logo-accent">Gitari</span>
+    </a>
+
+    <!-- DESKTOP NAV + THEME TOGGLE -->
+    <nav class="navbar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Work</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+      <!-- THEME TOGGLE (IN NAVBAR) -->
+      <button id="themeToggle" class="theme-toggle navbar-toggle" aria-label="Toggle theme">
+        <ion-icon name="sunny" class="sun"></ion-icon>
+        <ion-icon name="moon" class="moon"></ion-icon>
+      </button>
+
+      <a href="#" class="btn-primary" id="downloadCV">CV</a>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <!-- Close Button -->
+      <button class="menu-close" id="menuClose" aria-label="Close menu">
+        <ion-icon name="close"></ion-icon>
+      </button>
+
+      <!-- Logo -->
+      <a href="#" class="mobile-logo">
+        <span class="logo-text">Joseph</span>
+        <span class="logo-accent">Gitari</span>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="mobile-nav">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#portfolio" class="mobile-link">Work</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
+
+      <!-- CV Button -->
+      <a href="#" class="btn-primary mobile-cv" id="downloadCVMobile">
+        <ion-icon name="download-outline"></ion-icon> Download CV
+      </a>
+    </div>
+  </div>
+</header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="pretitle">Hi, I'm</p>
+            <h1 class="hero-title">
+               <span class="gradient-text">Joseph Gitari</span>
+            </h1>
+        <p class="hero-desc">
+          I build <strong>fast, beautiful, and scalable</strong> web experiences from Nairobi, Kenya.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Hire Me</a>
+          <a href="#portfolio" class="btn-secondary">See Work</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-card" data-tilt>
+          <img src="Images/Jose.jpg" alt="Joseph Gitari" class="profile-img">
+          <div class="glow"></div>
+        </div>
+        <div class="float-elem" style="top:10%;left:-10%">3+ Yrs</div>
+        <div class="float-elem" style="bottom:15%;right:-10%">10+ Projects</div>
+        <div class="float-elem trophy">Trophy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I turn ideas into <strong>pixel-perfect, high-performance</strong> digital products. From Nairobi, Kenya, I specialize in modern front-end technologies and creating delightful user interactions.</p>
+          <p>When I'm not coding, I'm exploring 3D web animations, mentoring juniors, or designing sleek UIs.</p>
+          <a href="#portfolio" class="btn-primary">View Projects</a>
+        </div>
+        <div class="about-image">
+          <img src="Images/hero-banner2.jpg" alt="Joseph working" class="img-cover">
+          <div class="badge">React</div>
+          <div class="badge">GSAP</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Featured Work</span></h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-tilt data-title="Graphic Design" data-desc="Gaphic Design with Canva, Adobe, and animations." style="background-image:url('Images/Graphic img.jpg')">
+          <div class="card-overlay">
+            <h3>Graphic Design</h3>
+            <p>Adobe • Canva • GSAP</p>
+            <span class="view">View →</span>
+          </div>
+        </div>
+        <div class="portfolio-card" data-tilt data-title="Gaming site" data-desc="Interactive virtual modes with canvas animations." style="background-image:url('Images/Game img.jpg')">
+          <div class="card-overlay">
+            <h3>Game App</h3>
+            <p>Canvas • JS • Mobile</p>
+            <span class="view">View →</span>
+          </div>
+        </div>
+        <div class="portfolio-card" data-tilt data-title="Food Ordering Site" data-desc="Experience taste of the world site." style="background-image:url('Images/Web design img.jpg')">
+          <div class="card-overlay">
+            <h3>Website DESIGN</h3>
+            <p>PhP • JS • CSS</p>
+            <span class="view">View →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills">
+  <div class="container">
+    <h2 class="section-title"><span class="gradient-text">My Superpowers</span></h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <h3>Front-End</h3>
+          <span class="skill-percent">95%</span>
+        </div>
+        <p>HTML, CSS, JS, React, Vue</p>
+        <div class="skill-bar"><div class="fill" data-percent="95"></div></div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <h3>Design</h3>
+          <span class="skill-percent">85%</span>
+        </div>
+        <p>Figma, UI/UX, Motion</p>
+        <div class="skill-bar"><div class="fill" data-percent="85"></div></div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <h3>Performance</h3>
+          <span class="skill-percent">90%</span>
+        </div>
+        <p>Lighthouse 100, Web Vitals</p>
+        <div class="skill-bar"><div class="fill" data-percent="90"></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2 class="section-title"><span class="gradient-text">Let's Build Together</span></h2>
+    <div class="contact-card">
+      <form action="https://formspree.io/f/xzzklygy" method="POST" id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:josephwanjohi508@gmail.com">josephwanjohi508@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+254111270277">+254 111 270 277</a></p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 <strong>Joseph Gitari</strong>. Built with passion.</p>
+      <div class="social">
+        <a href="https://instagram.com/josee_p3l" aria-label="Instagram">Instagram</a>
+        <a href="https://instagram.com/grind.craftz" aria-label="Design">Design</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="close">×</span>
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-text">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
